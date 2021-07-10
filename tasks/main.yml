@@ -1,0 +1,16 @@
+---
+- name: Install dependencies
+  ansible.builtin.package:
+    name: "{{ sysctl_dependencies }}"
+    state: present
+
+- name: Set sysctl params
+  ansible.posix.sysctl:
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+    sysctl_set: "{{ sysctl_set }}"
+    state: "{{ sysctl_state }}"
+    reload: "{{ sysctl_reload }}"
+  loop: "{{ sysctl }}"
+  loop_control:
+    label: "{{ item.name }}={{ item.value }}"

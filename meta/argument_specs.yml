@@ -1,0 +1,29 @@
+argument_specs:
+  # roles/myapp/tasks/main.yml entry point
+  main:
+    short_description: The main entry point for the myapp role.
+    options:
+      sysctl:
+        type: "list"
+        default: []
+        elements: "dict"
+        options:
+          name:
+            type: "str"
+            required: true
+          value:
+            type: "str"
+            required: true
+
+      sysctl_set:
+        type: "bool"
+        default: yes
+
+      sysctl_reload:
+        type: "bool"
+        default: yes
+
+      sysctl_state:
+        type: "str"
+        default: present
+        choices: ["present", "absent"]

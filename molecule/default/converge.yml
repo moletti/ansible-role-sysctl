@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: yes
+  roles:
+    - role: moletti.sysctl
+      tags: sysctl
+      sysctl:
+        - { name: net.ipv4.ip_forward, value: 1 }
