@@ -5,7 +5,7 @@ name: Ansible Molecule
 on:
   push:
     branches-ignore:
-      - '*'
+      - '**'
     tags:
   pull_request:
   schedule:
