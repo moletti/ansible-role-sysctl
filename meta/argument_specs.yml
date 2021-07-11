@@ -1,7 +1,6 @@
 argument_specs:
-  # roles/myapp/tasks/main.yml entry point
   main:
-    short_description: The main entry point for the myapp role.
+    short_description: The main entry point.
     options:
       sysctl:
         type: "list"

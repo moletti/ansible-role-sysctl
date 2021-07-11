@@ -2,7 +2,7 @@ galaxy_info:
   role_name: sysctl
   namespace: moletti
   author: Leo Moletti
-  description: Role description
+  description: Base role for manipulates sysctl entries
   license: MIT
   min_ansible_version: "2.11"
   platforms:
@@ -10,6 +10,8 @@ galaxy_info:
      versions:
        - stretch
        - buster
-  galaxy_tags: []
+  galaxy_tags:
+    - system
+    - sysctl
 
 dependencies: []
