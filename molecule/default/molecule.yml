@@ -2,7 +2,7 @@
 dependency:
   name: galaxy
   options:
-    force: false
+    force: False
 driver:
   name: docker
 lint: |
@@ -11,17 +11,11 @@ lint: |
   ansible-lint .
 
 platforms:
-  - name: debian9
-    image: moletti/molecule-debian:9
+  - name: ${MOLECULE_DISTR:-debian}${MOLECULE_DISTR_VERSION:-10}
+    image: moletti/molecule-${MOLECULE_DISTR:-debian}:${MOLECULE_DISTR_VERSION:-10}
     pre_build_image: true
     privileged: true
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    command: ~
-  - name: debian10
-    image: moletti/molecule-debian:10
-    pre_build_image: true
-    privileged: true
+    groups: ["${MOLECULE_DISTR:-debian}"]
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     command: ~

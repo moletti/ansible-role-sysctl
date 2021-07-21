@@ -1,5 +1,7 @@
 Ansible role: Sysctl
 =========
+[![Ansible Role](https://img.shields.io/ansible/role/55607)](https://galaxy.ansible.com/moletti/sysctl) [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/moletti/ansible-role-sysctl)](https://github.com/moletti/ansible-role-sysctl/releases) [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/moletti/ansible-role-sysctl/Ansible%20Molecule?label=test)](https://github.com/moletti/ansible-role-sysctl/actions/workflows/molecule.yml) [![Ansible Quality Score](https://img.shields.io/ansible/quality/55607)](https://galaxy.ansible.com/moletti/sysctl) [![Ansible Role](https://img.shields.io/ansible/role/d/55607)](https://galaxy.ansible.com/moletti/sysctl)
+
 Base role for manipulates sysctl entries.
 
 Install
@@ -15,7 +17,8 @@ Example playbook
   gather_facts: yes
   vars:
     sysctl:
-      - { name: net.ipv4.ip_forward, value : 1 }
+      - name: net.ipv4.ip_forward
+        value : 1
   roles:
     - { role: moletti.sysctl, tags: sysctl }
 ```

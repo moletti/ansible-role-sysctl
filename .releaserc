@@ -16,7 +16,8 @@
             {
                 "assets": [
                     "CHANGELOG.md"
-                ]
+                ],
+                "message": "[release]: ${nextRelease.version}\n\n${nextRelease.notes}",
             }
         ],
 
