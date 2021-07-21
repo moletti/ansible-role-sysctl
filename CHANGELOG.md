@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0](https://github.com/moletti/ansible-role-sysctl/compare/v1.0.1...v1.1.0) (2021-07-21)
+
+
+### Features
+
+* Add ubuntu support ([25bc24c](https://github.com/moletti/ansible-role-sysctl/commit/25bc24c3e912186d530a0d65b1058e76d604b452))
+
 ## [1.0.1](https://github.com/moletti/ansible-role-sysctl/compare/v1.0.0...v1.0.1) (2021-07-11)
 
 
