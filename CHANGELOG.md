@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/moletti/ansible-role-sysctl/compare/v1.1.0...v1.1.1) (2021-07-21)
+
+
+### Bug Fixes
+
+* Fix meta description ([9422325](https://github.com/moletti/ansible-role-sysctl/commit/9422325cbecf8b09839c390519c1698f3507ae61))
+
 # [1.1.0](https://github.com/moletti/ansible-role-sysctl/compare/v1.0.1...v1.1.0) (2021-07-21)
 
 
